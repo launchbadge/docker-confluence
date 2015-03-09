@@ -10,5 +10,5 @@ docker build -t confluence:5.7.1 --rm .
 
 ```
 docker run --restart=always -d --name postgres postgres
-docker run --restart=always -p 8090:8090 --name confluence --link postgres:db confluence:5.7.1
+docker run --restart=always -d -p 8090:8090 --name confluence --link postgres:db confluence:5.7.1
 ```
