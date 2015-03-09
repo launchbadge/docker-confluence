@@ -1,12 +1,12 @@
 # Confluence
 
-## Build
+#### Build
 
 ```
-docker build -t confluence:5.7.1 --rm .
+docker build -t confluence:5.7.1 --rm https://github.com/launchbadge/docker-confluence.git
 ```
 
-## Run
+#### Run
 
 ```
 docker run --restart=always -d --name postgres postgres
